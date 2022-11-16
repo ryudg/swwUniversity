@@ -44,7 +44,7 @@
         <div class="header-main">
           <div class="header-main-logo">
             <a href="./index.html">
-              <img src="./logo/대학교로고-white.png" alt="header-logo" />
+              <img src="./images/logo/대학교로고-white.png" alt="header-logo" />
               <span>실용음악과</span></a
             >
           </div>
@@ -55,7 +55,7 @@
                 <div class="header-main-list-depth2-box">
                   <div class="header-main-list-depth2-logo">
                     <img
-                      src="./logo/실용음악과로고.png"
+                      src="./images/logo/실용음악과로고.png"
                       alt="depth2-loog"
                     />
                   </div>
@@ -76,7 +76,7 @@
                 <div class="header-main-list-depth2-box">
                   <div class="header-main-list-depth2-logo">
                     <img
-                      src="./logo/실용음악과로고.png"
+                      src="./images/logo/실용음악과로고.png"
                       alt="depth2-loog"
                     />
                   </div>
@@ -93,7 +93,7 @@
                 <div class="header-main-list-depth2-box">
                   <div class="header-main-list-depth2-logo">
                     <img
-                      src="./logo/실용음악과로고.png"
+                      src="./images/logo/실용음악과로고.png"
                       alt="depth2-loog"
                     />
                   </div>
@@ -121,7 +121,7 @@
       <div class="sitemap">
         <div class="sitemap-logo">
           <a href="./index.html">
-            <img src="./logo/대학교로고.png" alt="sitemap-logo" />
+            <img src="./images/logo/대학교로고.png" alt="sitemap-logo" />
           </a>
           <button class="sitemap-close">
             <i class="fa-solid fa-x"></i>
@@ -161,7 +161,7 @@
       <!-- footer -->
       <footer>
         <div class="footer-logo">
-          <img src="./logo/대학교로고-white.png" alt="footer-logo" />
+          <img src="./images/logo/대학교로고-white.png" alt="footer-logo" />
         </div>
         <div class="footer-text">
           <p>
@@ -232,28 +232,7 @@
       src="https://kit.fontawesome.com/67eff22c15.js"
       crossorigin="anonymous"
     ></script>
-    <!-- 제이쿼리 -->
-    <script>
-      $(function () {
-        $(".header-main-list-open").on("click", function () {
-          $(".sitemap").toggleClass("active");
-        });
-        $(".sitemap-close").on("click", function () {
-          $(".sitemap").toggleClass("active");
-        });
-        $(window).scroll(function () {
-          let scrollT = $(window).scrollTop();
-          if (scrollT > 100) {
-            $(".header-main").addClass("active");
-            $(".header-sub").addClass("active");
-            $(".upbtn").addClass("active");
-          } else {
-            $(".header-main").removeClass("active");
-            $(".header-sub").removeClass("active");
-            $(".upbtn").removeClass("active");
-          }
-        });
-      });
-    </script>
+    <!-- 자바스크립트 -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
