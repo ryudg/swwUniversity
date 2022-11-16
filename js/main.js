@@ -23,8 +23,8 @@ $(function () {
 $(function () {
   $(window).scroll(function () {
     let scrollT2 = $(window).scrollTop();
-    console.log(scrollT2);
-    if (scrollT2 < 200) {
+
+    if (scrollT2 < 100) {
       $(".header-main-list-depth2-box").addClass("active");
       $(".header-main-list-depth2-list li a").addClass("active");
       $(".header-main-list-depth2-logo").addClass("active");
@@ -93,5 +93,18 @@ $(function () {
     btn2Box.removeClass("active");
     btn3Box.removeClass("active");
     btn4Box.addClass("active");
+  });
+});
+
+/* section notice scroll */
+$(function () {
+  $(window).scroll(function () {
+    let scrollT3 = $(window).scrollTop();
+    console.log(scrollT3);
+    if (scrollT3 > 800 && scrollT3 < 2600) {
+      $(".section-notice").addClass("active");
+    } else {
+      $(".section-notice").removeClass("active");
+    }
   });
 });
