@@ -40,9 +40,9 @@ $(function () {
 /* main-visual background-img */
 $(function () {
   let bgImg = [
-    "../images/mainvisual/main01.png",
-    "../images/mainvisual/main02.png",
-    "../images/mainvisual/main03.png",
+    "./images/mainvisual/main01.png",
+    "./images/mainvisual/main02.png",
+    "./images/mainvisual/main03.png",
   ];
   let bgImgNum = 0;
   setInterval(function () {
