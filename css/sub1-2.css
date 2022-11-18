@@ -1,0 +1,131 @@
+
+  body {
+    font-family: "Alegreya", "Nanum Gothic";
+    /* background: #ddd; */
+    height: 100%;
+  }
+  .wrap{
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 150px;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+  /* lnb */
+.lnb{
+  display: flex;
+  width: 1440px;
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  align-items: center;
+  position: relative;
+}
+.lnb h1{
+  font-size: 40px;
+  color: #d6d6d6;
+  font-weight: 700;
+  padding: 10px;
+}
+.lnb ul{
+  position: absolute;
+  left: 461px;
+}
+.lnb ul li{
+  display: inline-block;
+  margin-left: 30px;
+  
+}
+.lnb ul li span{
+  font-weight: 700;
+}
+  li {
+    list-style-type: none;
+  }
+   .container{
+    width: 1440px;
+    margin: 0 auto;
+  }
+   .container #slide1 h1{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+   #slide1, #event{
+    margin: 100px 20px;
+  }
+  /* 보여줄 구간의 높이와 넓이 설정 */
+   #slideShow {
+    /*전체 컨테이너*/
+    width: 1300px;
+    height: 250px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden; 
+  }
+   .slides {
+    /*이미지들이 담겨있는 슬라이드 컨테이너*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1800px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  } /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
+   .slides li:first-child {
+    margin-left: 100px;
+  } /* 슬라이드들 옆으로 정렬 */
+   .slides li:not(:last-child) {
+    float: left;
+    margin-right: 100px;
+  }
+   .controller span {
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 25%;
+    cursor: pointer;
+  } /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  /* .controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+  } */
+   .prev {
+    left: 10px;
+  } /* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+   .prev:hover {
+    transform: translateX(-10px);
+  }
+   .next {
+    right: 10px;
+  } /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+   .next:hover {
+    transform: translateX(10px);
+  }
+  #event{
+    margin-bottom: 100px;
+  }
+   #event #list-content{
+  width: 1440px;
+  margin: 0 auto;
+  /* padding: 100px 150px; */
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  }
+   #event h1{
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  }
+   #event #list-content .list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  } 
+   #event #list-content .list li{
+ /*  outline: 1px solid red; */
+  width: calc((100% - 240px) / 3);
+  } 

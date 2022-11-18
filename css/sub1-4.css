@@ -1,0 +1,77 @@
+body{
+    font-family: "Alegreya", "Nanum Gothic";
+}
+.wrap{
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 150px;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+section{
+    width: 1440px;
+}
+.location-info .container{
+    width: 100%;
+    display: flex;
+}
+.location-info .container img{
+    width: 50%;
+}
+.location-info .container .address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.location-info .container th, td{
+    padding: 5px;
+    padding-left: 1em;
+}
+.location-info .container th{
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: 700;
+}
+.location-info .container td{
+    font-size: 20px;
+    line-height: 27px;
+}
+#map{
+    margin-bottom: 100px;
+    
+}
+.mobilmap{
+    display: none;
+}
+
+/* lnb */
+.lnb{
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    align-items: center;
+    position: relative;
+}
+.lnb h1{
+    font-size: 40px;
+    color: #d6d6d6;
+    font-weight: 700;
+    padding: 10px;
+}
+.lnb ul{
+    position: absolute;
+    left: 461px;
+}
+.lnb ul li{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.lnb ul li span{
+    font-weight: 700;
+}

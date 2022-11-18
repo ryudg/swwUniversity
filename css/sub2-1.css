@@ -1,0 +1,373 @@
+/* sub1-2.css */
+/* sub공통 */
+img {
+  object-fit: cover;
+}
+h1 {
+  font-family: "Alegreya", "Nanum Gothic";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Alegreya", "Nanum Gothic";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Alegreya", "Nanum Gothic";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section .full-time-pro-list p:not(.hover),
+section .aff-pro-list p:not(.hover) {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+p.hover {
+  font-family: "Alegreya", "Nanum Gothic";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-visual-sub2-1 {
+  max-width: 1440px;
+  width: 100%;
+  height: 250px;
+}
+
+.main-visual-sub2-1 .sub-title {
+  background-image: url(../images/sub2-1/main-visual.jpg);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sub 공통 LNB */
+.lnb {
+  max-width: 1440px;
+  width: 100%;
+  /* background: #ccc; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 80px;
+  padding: 10px;
+}
+
+.lnb .lnb-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #d6d6d6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.lnb .lnb-list ul {
+  display: flex;
+  margin-right: 340px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.lnb .lnb-list ul li {
+  font-size: 20px;
+}
+
+.lnb-list-bold {
+  font-weight: bold;
+}
+
+.lnb .lnb-list {
+  flex: 3;
+}
+
+/* 좌표 기준 */
+section li {
+  position: relative;
+}
+
+/* sub2-1 전임교수 section */
+section {
+  max-width: 1440px;
+  width: 100%;
+  align-items: center;
+}
+section .assistant-list,
+section .full-time-pro-list {
+  text-align: center;
+}
+
+section img {
+  width: 350px;
+  height: 400px;
+}
+
+section h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 40px;
+}
+
+section .full-time-pro-list p {
+  margin-bottom: 50px;
+}
+
+section .aff-pro-list p {
+  margin-bottom: 100px;
+}
+section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+section li {
+  /* float: left; */
+  margin-right: 45px;
+}
+
+section .aff-pro {
+  clear: both;
+}
+
+/* 분기점_mobile-lnb */
+@media (max-width: 1024px) {
+  .lnb {
+    max-width: 1024px;
+    width: 100%;
+    /* background: #ccc; */
+    display: flex;
+    height: 137px;
+    padding: 10px;
+  }
+
+  .lnb .lnb-title {
+    display: none;
+  }
+
+  .lnb .lnb-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  .lnb .lnb-list ul li {
+    padding: 20px 18px;
+    font-size: 20px;
+  }
+
+  .lnb-list-bold {
+    font-weight: bold;
+  }
+
+  .lnb .lnb-list {
+    flex: 3;
+  }
+  /* 분기점에서 hover 효과 제거 */
+  /* section {
+    pointer-events: none;
+  } */
+}
+
+@media (max-width: 767px) {
+  .lnb {
+    max-width: 767px;
+    width: 100%;
+    /* background: #ccc; */
+    display: flex;
+    height: 137px;
+    padding: 10px;
+  }
+
+  .lnb .lnb-title {
+    display: none;
+  }
+
+  .lnb .lnb-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .lnb .lnb-list ul li {
+    padding: 20px 18px;
+    font-size: 20px;
+  }
+
+  .lnb-list-bold {
+    font-weight: bold;
+  }
+
+  .lnb .lnb-list {
+    flex: 3;
+  }
+  /* Mobile-main-visual */
+  .main-visual-sub2-1 .sub-title {
+    background-position: center center;
+  }
+
+  .main-visual-sub2-1 h1 {
+    font-size: 26px;
+  }
+  /* Mobile-section */
+  section {
+    text-align: center;
+    margin: 0 21px;
+  }
+
+  section li {
+    margin-right: 0;
+  }
+
+  section li > p {
+    display: none;
+  }
+
+  section .aff-pro h2 {
+    margin-top: 30px;
+  }
+
+  section .aff-pro p {
+    margin-bottom: 30px;
+  }
+
+  section .aff-pro h2 {
+    margin-top: 30px;
+  }
+
+  section .aff-pro p {
+    margin-bottom: 30px;
+  }
+
+  section h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  section p.hover {
+    display: block;
+    line-height: 19px;
+  }
+
+  section li {
+    float: none;
+  }
+
+  /* 분기점에서 hover 효과 제거 */
+  section {
+    pointer-events: none;
+  }
+}
+
+/* 반응형 hovew pc일땐 나타나게 mobile 일땐 안보이게 */
+@media (hover: hover) {
+  /* hover시 사진 흑백 */
+  section .full-time-pro-list ul li:nth-child(1):hover {
+    filter: saturate(0);
+  }
+
+  /* hover용 p text 안보임 */
+  p.hover {
+    display: none;
+    line-height: 22px;
+  }
+  /* hover시 p text 사진위에 등장 */
+  section .full-time-pro-list ul li:nth-child(1):hover p.hover {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 16px;
+    color: #fff;
+  }
+
+  section .full-time-pro-list ul li:nth-child(2):hover p.hover {
+    display: block;
+    position: absolute;
+    left: 49px;
+    top: 145px;
+    color: #fff;
+  }
+
+  section .full-time-pro-list ul li:nth-child(3):hover p.hover {
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 140px;
+    color: #fff;
+  }
+
+  /* 겸임교수 사진 hover시 흑백 */
+  section .aff-pro-list ul li:nth-child(n):hover > img {
+    filter: saturate(0) brightness(0.5);
+  }
+
+  /* 겸임교수 사진 hover시 p text 등장 */
+  section .aff-pro-list ul li:nth-child(1):hover .hover {
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(2):hover .hover {
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(3):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(4):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 58px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(5):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 9px;
+    color: #fff;
+    text-align: center;
+  }
+}

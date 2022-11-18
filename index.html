@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수원여자대학교 실용음악과</title>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- 메인css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <!-- header-sub -->
+        <div class="header-sub">
+          <div class="header-sub-icon">
+            <span class="header-sub-icon-content1">
+              <a target="_blank" href="https://www.swwu.ac.kr/swwu.do">
+                <i class="fa-solid fa-house"></i>
+                대학
+              </a>
+            </span>
+            <span class="header-sub-icon-content2">
+              <a target="_blank" href="https://entr.swwu.ac.kr/swc.do">
+                <i class="fa-solid fa-house-user"></i>
+                입학
+              </a>
+            </span>
+          </div>
+          <div class="header-sub-login">
+            <span><a href="#">Login</a></span>
+          </div>
+        </div>
+        <!-- header-main -->
+        <div class="header-main">
+          <div class="header-main-logo">
+            <a href="./index.html">
+              <img
+                id="headerlogo"
+                src="./images/logo/logomainwhite.png"
+                alt="header-logo"
+              />
+              <span>실용음악과</span></a
+            >
+          </div>
+          <nav class="header-main-list">
+            <ul class="header-main-list-depth1">
+              <li>
+                <a href="./pages/sub1-1.html">학과소개</a>
+                <div class="header-main-list-depth2-box">
+                  <div class="header-main-list-depth2-logo">
+                    <img src="./images/logo/logosub.png" alt="depth2-logo" />
+                  </div>
+                  <div class="header-main-list-depth2-title">
+                    <p>학과소개</p>
+                  </div>
+                  <ul class="header-main-list-depth2-list">
+                    <li><a href="./pages/sub1-1.html">학과소개</a></li>
+                    <li><a href="./pages/sub1-2.html">학과소식</a></li>
+                    <li><a href="#">교육시설 및 장비</a></li>
+                    <li><a href="./pages/sub1-4.html">오시는 길</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./pages/sub2-1.html">교수소개</a>
+                <div class="header-main-list-depth2-box">
+                  <div class="header-main-list-depth2-logo">
+                    <img src="./images/logo/logosub.png" alt="depth2-logo" />
+                  </div>
+                  <div class="header-main-list-depth2-title">
+                    <p>교수소개</p>
+                  </div>
+                  <ul class="header-main-list-depth2-list">
+                    <li><a href="./pages/sub2-1.html">교수소개</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./pages/sub3-1.html">APOA STUDIO</a>
+                <div class="header-main-list-depth2-box">
+                  <div class="header-main-list-depth2-logo">
+                    <img src="./images/logo/logosub.png" alt="depth2-logo" />
+                  </div>
+                  <div class="header-main-list-depth2-title">
+                    <p>APOA STUDIO</p>
+                  </div>
+                  <ul class="header-main-list-depth2-list">
+                    <li>
+                      <a href="./pages/sub3-1.html">음반 제작 유통업무</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <div class="header-main-list-depth2-box">
+                  <div class="header-main-list-depth2-logo">
+                    <img src="./images/logo/logosub.png" alt="depth2-logo" />
+                  </div>
+                  <div class="header-main-list-depth2-title">
+                    <p>커뮤니티</p>
+                  </div>
+                  <ul class="header-main-list-depth2-list">
+                    <li><a href="#">학사일정</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="./pages/sub4-3.html">포토게시판</a></li>
+                    <li><a href="./pages/sub4-4.html">SNS</a></li>
+                    <li><a href="./pages/sub4-5.html">졸업생 소식</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="header-main-list-open">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- sitemap -->
+      <div class="sitemap">
+        <div class="sitemap-logo">
+          <a href="./index.html" class="sitemap-pc-logo">
+            <img src="./images/logo/logomain.png" alt="sitemap-logo" />
+          </a>
+          <div class="sitemap-mobile">
+            <a class="sitemap-mobile-home" href="./index.html">Home</a>
+            <a class="sitemap-mobile-login" href="#">로그인</a>
+          </div>
+          <button class="sitemap-close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="sitemap-list">
+          <ul class="sitemap-depth1">
+            <li>
+              <a href="./pages/sub1-1.html">학과소개</a>
+              <ul class="sitemap-depht2">
+                <li><a href="./pages/sub1-1.html">학과소개</a></li>
+                <li><a href="./pages/sub1-2.html">학과소식</a></li>
+                <li><a href="#">교육 시설 및 장비</a></li>
+                <li><a href="./pages/sub1-4.html">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">교수소개</a>
+              <ul class="sitemap-depht2">
+                <li><a href="./pages/sub2-1.html">교수소개</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./pages/sub3-1.html">APOP STUDIO</a>
+              <ul class="sitemap-depht2">
+                <li>
+                  <a href="./pages/sub3-1.html">음반 제작 및 유통 업무</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="sitemap-depht2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">학사일정</a></li>
+                <li><a href="./pages/sub4-3.html">포토게시판</a></li>
+                <li><a href="./pages/sub4-4.html">SNS</a></li>
+                <li><a href="./pages/sub4-5.html">졸업생소식</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sitemap-list-mobile">
+          <div class="sitemap-list-mobile-depth1">
+            <button class="sitemap-list-mobile-depth1-btn1">학과소개</button>
+            <button class="sitemap-list-mobile-depth1-btn2">교수소개</button>
+            <button class="sitemap-list-mobile-depth1-btn3">APOA STUDIO</button>
+            <button class="sitemap-list-mobile-depth1-btn4">커뮤니티</button>
+          </div>
+          <div class="sitemap-list-mobile-depth2">
+            <div class="sitemap-list-mobile-depth1-btn1-open">
+              <ul>
+                <li>
+                  <a href="./pages/sub1-1.html"
+                    ><span>학과소개</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./pages/sub1-2.html"
+                    ><span>학과소식</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>교육시설 및 장비</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./pages/sub1-4.html"
+                    ><span>오시는 길</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-list-mobile-depth1-btn2-open">
+              <ul>
+                <li>
+                  <a href="./pages/sub2-1.html"
+                    ><span>교수소개</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-list-mobile-depth1-btn3-open">
+              <ul>
+                <li>
+                  <a href="./pages/sub3-1.html"
+                    ><span>음반 제작 및 유통 업무</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-list-mobile-depth1-btn4-open">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span>학사일정</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span>공지사항</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./pages/sub4-3.html"
+                    ><span>포토게시판</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./pages/sub4-4.html"
+                    ><span>SNS</span><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./pages/sub4-5.html"
+                    ><span>졸업생 소식</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main-visual -->
+      <div class="main-visual">
+        <div class="mian-visual-text-box">
+          <p>아름다운 비상이 시작됩니다.</p>
+          <span>수원여자대학교 실용음악과</span>
+        </div>
+      </div>
+
+      <!-- section -->
+      <!-- section01 -->
+      <section class="section-quick">
+        <div class="section-quick-title">
+          <p>QUCIK SERVICE</p>
+          <h1>자주찾아가는 서비스</h1>
+        </div>
+        <div class="section-quick-menu">
+          <div class="quick-menu">
+            <a href="#"
+              ><i class="fa-solid fa-graduation-cap"></i>
+              <span>학생이력 관리 시스템</span></a
+            >
+          </div>
+          <div class="quick-menu">
+            <a href="#"
+              ><i class="fa-solid fa-desktop"></i> <span>e Campus(LMS)</span></a
+            >
+          </div>
+          <div class="quick-menu">
+            <a href="#"
+              ><i class="fa-solid fa-book-open-reader"></i>
+              <span>도서관</span></a
+            >
+          </div>
+          <div class="quick-menu">
+            <a href="#"
+              ><i class="fa-solid fa-computer"></i>
+              <span>차세대 학사행정시스템</span></a
+            >
+          </div>
+          <div class="quick-menu">
+            <a href="#"
+              ><i class="fa-regular fa-folder"></i> <span>인터넷증명</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- section02 -->
+      <section class="section-notice">
+        <div class="section-notice-title">
+          <p>NOTICE</p>
+          <h1>공지사항</h1>
+        </div>
+        <div class="section-notice-menu">
+          <div class="notice-menu">
+            <a href="#">
+              <h1>NEW</h1>
+              <h2>2022년 천안시 대학생 학자금 대출이자 지원 사업 안내</h2>
+              <h3>
+                1. 지원대상 : 본인이 현재(2022.1.1.) 주민등록상 주소가
+                천안이거나, 직계존속 1인의 주민등록상 주소가1년 이상 천안으로
+                되어있는 대학생 및 졸업 후 2년 내 미취업자※ 제외 : 대학원생,
+                대출전액상환자, 타 장학금 또는 이자 명목으로 지원 받는 대학생2.
+                지원내용 : 2017년부터 한국장학재단에서 대출받은 학자금의 2021년
+                7월부터 12월까지 발생한 이자전액 지원※ 단, 소득분위 1~8분위에
+                한함3. 신청기간 : 2022. 1. 10.(월) ~ 1. 21.(금)1) 온라인 : 2022.
+                1. 21.(금) 24시 마감2) 우편·방문 : 2022. 1. 21.(금) 18시 마감4.
+                지원 방법 : 한국장학재단에 지급(개인별 계좌로 입금되지 않음)5.
+                신청방법1) 온라인 : 천안시 홈페이지 – 분야별정보 – 교육 – 학자금
+                대출이자 지원2) 우편·방문 : 천안시 서북구 번영로 156, 불당동
+                천안시청 1층 청년담당관 청년복지팀
+              </h3>
+              <h4>2022.01.10</h4>
+            </a>
+            <div class="notice-menu-btn">
+              <a href="#">학과<br />공지</a>
+            </div>
+          </div>
+          <div class="notice-menu">
+            <a href="#">
+              <h1>NEW</h1>
+              <h2>2022년도 1학기 학자금대출 일정 안내</h2>
+              <h3>
+                1. 대출일정▷ 등록금대출(일시납)(대출신청) 1.5.(수) ~
+                4.14.(목)(대출실행) 1.5.(수) ~ 4.14.(목)▷
+                생활비대출/분납대출(대출신청) 1.5.(수) ~ 5.19.(목)(대출실행)
+                1.5.(수) ~ 5.20.(금)▷ 취업후상환 전환대출(대출신청) 1.5.(수) ~
+                5.23.(월)(대출실행) 1.5.(수) ~ 5.24.(화)※ 신청가능시간 :
+                등록금대출(일시납)은 9시부터 14시까지, 등록금대출(분납),
+                생활비대출은 18시까지※ 실행가능시간 : 우리대학의
+                등록금납부고지서에 기재된 납부 가능시간※ 주말 및 공휴일에는 신청
+                및 실행 불가※ 대학 및 은행별 수납 마감기한 이내 대출 실행 가능2.
+                학자금 대출관련 문의사항은 장학재단 상담센터(1599-2000)에서
+                상세히 안내받을 수 있습니다.
+              </h3>
+              <h4>2022.01.10</h4>
+            </a>
+            <div class="notice-menu-btn">
+              <a href="#">학과<br />공지</a>
+            </div>
+          </div>
+          <div class="notice-menu">
+            <a href="#">
+              <h1>NEW</h1>
+              <h2>2021년 종무에 따른 단축근무 실시 안내(12/31)</h2>
+              <h3>
+                안녕하세요.수원여자대학교입니다.2021년 종무에 따른 단축근무를
+                아래와 같이 시행합니다.- 아 래 -1. 대상 : 우리 대학 전 교직원2.
+                일시 : 2021년 12월 31일(금)3. 근무시간 : 09:00 ~
+                12:00(오전근무만 실시)
+              </h3>
+              <h4>2022.01.10</h4>
+            </a>
+            <div class="notice-menu-btn">
+              <a href="#">학과<br />공지</a>
+            </div>
+          </div>
+          <div class="notice-menu">
+            <a href="#">
+              <h1>NEW</h1>
+              <h2>(교외장학) 2022년 (재) 논산시장학회 장학생 선발계획 안내</h2>
+              <h3>
+                논산시에서는 미래를 책임질 인재를 육성하고자 아래와 같이 논산시
+                장학생을 선발하오니 선발요건을 참고하여 신청 자격이 있는 학생은
+                장학생 신청을 접수기간 내에 완료하시기 바랍니다.1. 접수기간 :
+                2022년 1월 24일(월) ~ 1월 28일(금)2. 신청자격 : 공고문 파일
+                참조(3p)3. 선발일정 : 공고문 파일 참조(3p)4. 기타 자세한 사항은
+                붙임파일 참조
+              </h3>
+              <h4>2022.01.10</h4>
+            </a>
+            <div class="notice-menu-btn">
+              <a href="#">학과<br />공지</a>
+            </div>
+          </div>
+        </div>
+        <div class="section-notice-btn">
+          <a href="#">더보기</a>
+        </div>
+      </section>
+      <!-- section03 -->
+      <section class="section-studio">
+        <div class="section-studio-title">
+          <p>APOA STUDIO</p>
+          <h1>APOA STUDIO</h1>
+        </div>
+        <div class="section-studio-menu">
+          <div class="studio-menu">
+            <p>여운</p>
+            <p>아티스트 : 정은정</p>
+            <p>장르 : 재즈</p>
+            <p>발매사 : 콩지뮤직</p>
+            <audio src="./mp3/01.mp3" controls id="myAudio"></audio>
+          </div>
+          <div class="studio-menu">
+            <p>괜찮아</p>
+            <p>아티스트 : 박소미</p>
+            <p>장르 : 발라드/가요</p>
+            <p>발매사 : 보자기 레이블</p>
+            <audio src="./mp3/02.mp3" controls id="myAudio"></audio>
+          </div>
+          <div class="studio-menu">
+            <p>OH DAMN</p>
+            <p>아티스트 : HAZZ(반현아)</p>
+            <p>장르 : R&B/소울/가요</p>
+            <p>발매사 : 보자기 레이블</p>
+            <audio src="./mp3/03.mp3" controls id="myAudio"></audio>
+          </div>
+        </div>
+        <div class="section-notice-btn">
+          <a href="./pages/sub3-1.html">더보기</a>
+        </div>
+      </section>
+      <!-- section04 -->
+      <section class="section-news">
+        <div class="section-news-title">
+          <p>GRADUTATE NWES</p>
+          <h1>졸업생 소식</h1>
+        </div>
+        <div class="section-news-menu">
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/01.png" alt="졸업생 유난이" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/I5LhpklaHE4"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 유난이</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/02.png" alt="졸업생 허지영" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/kKuniZBvM4I"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 허지영</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/03.png" alt="졸업생 허민선" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/yMqL1iWfku4"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 허민선 (웨이)</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/04.png" alt="졸업생 이영주" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/k1kaCHyKhNs"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 이영주</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/05.png" alt="졸업생 차수경" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/RV5W7QxxKRQ"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 차수경</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/06.png" alt="졸업생 황시진" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/EFt-XvOflJ4"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 황시진 (코다브릿지)</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/07.png" alt="졸업생 조소현" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/lIymfb53OEg"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 조소현</p>
+            </div>
+          </div>
+          <div class="section-news-menu-item">
+            <div class="item-box">
+              <img src="./images/graduate/08.png" alt="졸업생 정미란" />
+              <div class="youtube">
+                <a target="_blank" href="https://youtu.be/x6y4P_KL1LY"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="graduate-name">
+              <p>졸업생 정미란</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-news-btn">
+          <a href="./pages/sub4-5.html">더보기</a>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-logo">
+          <a href="./index.html"
+            ><img src="./images/logo/logomainwhite.png" alt="footerlogo"
+          /></a>
+        </div>
+        <div class="footer-text">
+          <p>
+            <span class="footer-bold">개인정보방침</span>
+            <span>|</span>
+            <span>이메일주소무단 수집거부</span>
+          </p>
+          <p>
+            <span class="footer-bold">[인제캠퍼스]</span>
+            <span>16632 경기도 수원시 권선구 온정로 72</span>
+            <span class="footer-bold">[해란캠퍼스]</span>
+            <span>18333 경기도 화성시 주석로 1098</span>
+            <span>Tel : 031-290-8000</span>
+          </p>
+          <p>
+            <span
+              >Copyright ⓒ 2015 by Suwon Women’s University. All Right
+              Reserved</span
+            >
+          </p>
+        </div>
+        <div class="footer-select">
+          <select>
+            <option value="">학과홈페이지</option>
+            <option value="">학과홈페이지</option>
+            <option value="">학과홈페이지</option>
+            <option value="">학과홈페이지</option>
+            <option value="">학과홈페이지</option>
+          </select>
+          <select>
+            <option value="">교내사이트</option>
+            <option value="">교내사이트</option>
+            <option value="">교내사이트</option>
+            <option value="">교내사이트</option>
+            <option value="">교내사이트</option>
+          </select>
+        </div>
+      </footer>
+
+      <!-- up btn -->
+      <div class="upbtn">
+        <a href="#">
+          <i class="fa-solid fa-circle-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/67eff22c15.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 자바스크립트 -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
