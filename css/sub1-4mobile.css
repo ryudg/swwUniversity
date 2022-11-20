@@ -10,6 +10,24 @@ body{
     position: absolute;
     bottom: 0;
   }
+  #sub-title{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/sub1-4/subtitle-location.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-size: cover; */
+}
+#sub-title .container{
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  
+}
   .location-info .container{
     display: flex;
     flex-flow: column;
@@ -61,40 +79,73 @@ body{
 }
 
  /* lnb */
- .lnb{
-    display: flex;
+ .lnb {
+  max-width: 767px;
+  width: 100%;
+  /* background: #ccc; */
+  height: 137px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.lnb .lnb-title {
+  display: none;
+}
+
+.lnb .lnb-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.lnb .lnb-list ul li {
+  padding: 20px 18px;
+  font-size: 20px;
+}
+
+.lnb-list-bold {
+  font-weight: bold;
+}
+
+.lnb .lnb-list {
+  flex: 3;
+}
+@media (max-width: 1024px) {
+  .lnb {
+    max-width: 1024px;
     width: 100%;
-    height: 114px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    align-items: center;
-    margin: 0 auto;
-  }
-  .lnb h1{
-    font-size: 40px;
-    color: #d6d6d6;
-    font-weight: 700;
+    /* background: #ccc; */
+    display: flex;
+    height: 137px;
     padding: 10px;
+  }
+
+  .lnb .lnb-title {
     display: none;
   }
-  .lnb ul{
+
+  .lnb .lnb-list ul {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
   }
-  .lnb ul li{
-    display: inline-block;
-    margin-left: 30px;
-    width: 30%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+
+  .lnb .lnb-list ul li {
+    padding: 20px 18px;
+    font-size: 20px;
   }
-  .lnb ul li:nth-child(1){
-      text-align: center;
+
+  .lnb-list-bold {
+    font-weight: bold;
   }
-  .lnb ul li span{
-    font-weight: 700;
+
+  .lnb .lnb-list {
+    flex: 3;
   }
-  li {
-      list-style-type: none;
-  }
+}
