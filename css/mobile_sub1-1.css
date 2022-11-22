@@ -1,0 +1,94 @@
+/* mobile_sub1-1.css */
+
+/* mobile-lnb */
+
+span.pt {
+  display: inline;
+}
+
+span.mt {
+  display: block;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.lnb {
+  max-width: 767px;
+  width: 100%;
+  /* background: #ccc; */
+  height: 137px;
+  padding: 10px;
+}
+
+.lnb .lnb-title {
+  display: none;
+}
+
+.lnb .lnb-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.lnb .lnb-list ul li {
+  padding: 20px 18px;
+  font-size: 20px;
+}
+
+.lnb-list-bold {
+  font-weight: bold;
+}
+
+.lnb .lnb-list {
+  flex: 3;
+}
+
+.main-visual-sub1-1 .sub-title {
+  background-position: center center;
+}
+
+.main-visual-sub1-1 h1 {
+  font-size: 26px;
+}
+/* text 줄내림?방식 */
+section .content1-text p,
+section .content2-text p,
+section .content3-text p {
+  word-break: keep-all;
+}
+
+section .content3-text .pctext,
+section .content1-text .pctext {
+  display: inline;
+}
+
+section .content3-text .mtext {
+  display: block;
+}
+
+section .content1-text p {
+  margin-bottom: 25px;
+}
+
+section .content2 {
+  padding: 50px 20px;
+}
+
+section .content1-text h2,
+section .content2-text h2,
+section .content3-text h2 {
+  margin-bottom: 15px;
+}
+
+section .content2-text p:nth-child(2) {
+  margin-bottom: 100px;
+}

@@ -1,0 +1,181 @@
+/* mobile_sub2-1.css */
+
+.lnb {
+  max-width: 767px;
+  width: 100%;
+  /* background: #ccc; */
+  display: flex;
+  height: 137px;
+  padding: 10px;
+}
+
+.lnb .lnb-title {
+  display: none;
+}
+
+.lnb .lnb-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.lnb .lnb-list ul li {
+  padding: 20px 18px;
+  font-size: 20px;
+}
+
+.lnb-list-bold {
+  font-weight: bold;
+}
+
+.lnb .lnb-list {
+  flex: 3;
+}
+/* Mobile-main-visual */
+.main-visual-sub2-1 .sub-title {
+  background-position: center center;
+}
+
+.main-visual-sub2-1 h1 {
+  font-size: 26px;
+}
+/* Mobile-section */
+section {
+  text-align: center;
+  margin: 0 21px;
+}
+
+section li {
+  margin-right: 0;
+}
+
+section li > p {
+  display: none;
+}
+
+section .aff-pro h2 {
+  margin-top: 30px;
+}
+
+section .aff-pro p {
+  margin-bottom: 30px;
+}
+
+section .aff-pro h2 {
+  margin-top: 30px;
+}
+
+section .aff-pro p {
+  margin-bottom: 30px;
+}
+
+section h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+section p.hover {
+  display: block;
+  line-height: 19px;
+}
+
+section li {
+  float: none;
+}
+
+/* 분기점에서 hover 효과 제거 */
+section {
+  pointer-events: none;
+}
+
+/* 반응형 hovew pc일땐 나타나게 mobile 일땐 안보이게 */
+@media (hover: hover) {
+  /* hover시 사진 흑백 */
+  section .full-time-pro-list ul li:nth-child(1):hover {
+    filter: saturate(0);
+  }
+
+  /* hover용 p text 안보임 */
+  p.hover {
+    display: none;
+    line-height: 22px;
+  }
+  /* hover시 p text 사진위에 등장 */
+  section .full-time-pro-list ul li:nth-child(1):hover p.hover {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 16px;
+    color: #fff;
+  }
+
+  section .full-time-pro-list ul li:nth-child(2):hover p.hover {
+    display: block;
+    position: absolute;
+    left: 49px;
+    top: 145px;
+    color: #fff;
+  }
+
+  section .full-time-pro-list ul li:nth-child(3):hover p.hover {
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 140px;
+    color: #fff;
+  }
+
+  /* 겸임교수 사진 hover시 흑백 */
+  section .aff-pro-list ul li:nth-child(n):hover > img {
+    filter: saturate(0) brightness(0.5);
+  }
+
+  /* 겸임교수 사진 hover시 p text 등장 */
+  section .aff-pro-list ul li:nth-child(1):hover .hover {
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(2):hover .hover {
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(3):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(5):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 58px;
+    color: #fff;
+    text-align: center;
+  }
+
+  section .aff-pro-list ul li:nth-child(6):hover .hover {
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 9px;
+    color: #fff;
+    text-align: center;
+  }
+}
