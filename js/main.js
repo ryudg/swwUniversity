@@ -53,7 +53,7 @@ $(function () {
     $(".main-visual").css({
       "background-image": `url(${bgImg[bgImgNum]})`,
     });
-  }, 5000);
+  }, 8000);
 });
 
 /* mobile site map btn */
