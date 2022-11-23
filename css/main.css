@@ -528,7 +528,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 1s;
+  transition: background-image 1s;
 }
 .mian-visual-text-box p {
   font-size: 64px;
